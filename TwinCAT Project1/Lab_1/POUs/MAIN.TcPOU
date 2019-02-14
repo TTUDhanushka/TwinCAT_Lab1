@@ -3,14 +3,27 @@
   <POU Name="MAIN" Id="{57ff0dc6-447c-4b99-9c33-6a346549c215}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	bStart : bool; 		// start button
+	//To attach variables to IO modules, it is needed to use "AT",
+	// Inputs - I, Output - Q 
+	bStart AT %I* 	: BOOL; 		// start button
+	bLamp AT %Q*	: BOOL;			// Lamp 
+	
+	// Local variables without connecting to IO
+	bStatus 		: BOOL;
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[
+// Switch on the lamp with push button in visualization.
+bLamp := bStart;
+	]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
+      <LineId Id="15" Count="0" />
+      <LineId Id="8" Count="0" />
       <LineId Id="2" Count="0" />
+      <LineId Id="9" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

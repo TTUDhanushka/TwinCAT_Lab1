@@ -78,6 +78,10 @@
                       <v n="Id">2597686782L</v>
                       <v n="Value">false</v>
                     </o>
+                    <o>
+                      <v n="Id">743958181L</v>
+                      <v n="Value">"MAIN.bLamp"</v>
+                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Lamp1"</v>
@@ -171,6 +175,10 @@
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">743958181L</v>
+                      <v n="Value">"MAIN.bStart"</v>
                     </o>
                   </l>
                 </o>
@@ -287,12 +295,12 @@
                       <v n="Value">""</v>
                     </o>
                     <o>
-                      <v n="Id">823443203L</v>
-                      <v n="Value">"102"</v>
-                    </o>
-                    <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">true</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"102"</v>
                     </o>
                   </l>
                 </o>
@@ -326,36 +334,40 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
-                <v>GetUpdateRects</v>
-                <v>969c4b97-0c85-4860-a194-ff6df7e0c691</v>
+                <v>HasVisibilityAccess</v>
+                <v>a5f2d7f7-c371-480a-a8aa-2abe673fc8b6</v>
                 <v>ContainsPoint</v>
                 <v>253faf4a-346a-45bd-b0de-cfc4d04e406b</v>
                 <v>FB_Reinit</v>
                 <v>8397566f-e3ad-45e2-9a1e-ce42a7fa75e9</v>
-                <v>SetStaticState</v>
-                <v>ce38bd90-45ab-427a-aec1-27617dff0b72</v>
-                <v>Update</v>
-                <v>610ee702-e8a6-4c63-9d9a-9b52e9b065c9</v>
+                <v>HasInputAccess</v>
+                <v>ab0ebc9b-d3e5-4d0e-af78-c2186597703a</v>
+                <v>HasInputAccessIntern</v>
+                <v>c8a3fd23-0730-482a-a681-45f15d5f1185</v>
                 <v>GetTooltip</v>
                 <v>7458a601-5e6f-4e06-9124-40a506a5369e</v>
                 <v>GetDialogInterfaceSize</v>
                 <v>40a873e3-fbe8-46b6-8d81-6df6f7e8ab5f</v>
+                <v>GetUpdateRects</v>
+                <v>969c4b97-0c85-4860-a194-ff6df7e0c691</v>
                 <v>GetNamespace</v>
                 <v>e3f7e6e0-76ab-4d79-8705-176e5c02a4ae</v>
                 <v>SetResult</v>
                 <v>1c270aed-95fe-480d-8e37-614ee663f132</v>
                 <v>GetTranslator</v>
                 <v>81e30691-145b-4ed0-ac8e-309c158bb429</v>
+                <v>Update</v>
+                <v>610ee702-e8a6-4c63-9d9a-9b52e9b065c9</v>
                 <v>SetClientData</v>
                 <v>854fd3ec-02e7-40d6-8f41-5ee8483e20d1</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>e3ecf039-b6cf-4a8c-aa8f-375ecc500734</v>
                 <v>GetInstance</v>
                 <v>dd2074a3-8d7c-4992-8d5d-b25b662e3c21</v>
                 <v>GetClientData</v>
                 <v>1ba3f263-58b0-47b0-9efc-6b8568e65b0c</v>
                 <v>Paint</v>
                 <v>0e4df489-a092-45e5-8a1e-9078c711c5f0</v>
-                <v>HasVisibilityAccess</v>
-                <v>a5f2d7f7-c371-480a-a8aa-2abe673fc8b6</v>
                 <v>GetElementArray</v>
                 <v>130104bb-5202-4a0a-8cb7-72768e345f55</v>
                 <v>SetVisuFlagsInternal</v>
@@ -364,14 +376,10 @@
                 <v>50e0edf0-32bd-4668-b7b6-2ad3eeadc9e0</v>
                 <v>GetTextProperties</v>
                 <v>609adecd-7404-4353-8410-d4e45ddd3433</v>
-                <v>HasInputAccessIntern</v>
-                <v>c8a3fd23-0730-482a-a681-45f15d5f1185</v>
                 <v>Initialize</v>
                 <v>3e1f92e7-5a2f-403b-9cf8-7bca6ab59992</v>
-                <v>HasInputAccess</v>
-                <v>ab0ebc9b-d3e5-4d0e-af78-c2186597703a</v>
-                <v>HasVisibilityAccessIntern</v>
-                <v>e3ecf039-b6cf-4a8c-aa8f-375ecc500734</v>
+                <v>SetStaticState</v>
+                <v>ce38bd90-45ab-427a-aec1-27617dff0b72</v>
                 <v>GetSurroundingRect</v>
                 <v>f19e9698-c148-46e5-b6b5-62e276106c0c</v>
                 <v>GetResult</v>
