@@ -22,7 +22,7 @@ END_VAR
 	// Switch on the lamp with push button in visualization.
 	bLamp := bStart;
 
-	rising.CLK := FALSE;
+	//The trigger function should get a rising ednge to trigger and set Q to true.
 
 	rising(CLK := bStart, Q => bStatus);
 
