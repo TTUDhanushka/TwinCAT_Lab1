@@ -10,9 +10,29 @@
 		</System>
 		<Plc>
 			<Project GUID="{BCC10B6B-19B5-4503-BB57-5D375741D020}" Name="Lab_1" PrjFilePath="Lab_1\Lab_1.plcproj" TmcFilePath="Lab_1\Lab_1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="Lab_1\Lab_1.tmc">
 					<Name>Lab_1 Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>MAIN.bStart</Name>
+							<Comment>
+								<![CDATA[ start button]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>MAIN.bLamp</Name>
+							<Comment>
+								<![CDATA[ Lamp ]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x08502001"/>
 					</TaskPouOids>

@@ -10,19 +10,39 @@ VAR
 	
 	// Local variables without connecting to IO
 	bStatus 		: BOOL;
+
+	nCount			: UINT;			//Counter
+	
+	rising 			: R_TRIG;		// Rising edge trigger
 	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
-// Switch on the lamp with push button in visualization.
-bLamp := bStart;
+	// Switch on the lamp with push button in visualization.
+	bLamp := bStart;
+
+	rising.CLK := FALSE;
+
+	rising(CLK := bStart, Q => bStatus);
+
+	IF bStatus THEN
+		nCount := nCount + 1;
+		bStatus := FALSE;
+	END_IF
 	]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="15" Count="0" />
       <LineId Id="8" Count="0" />
       <LineId Id="2" Count="0" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="34" Count="2" />
+      <LineId Id="28" Count="0" />
       <LineId Id="9" Count="0" />
     </LineIds>
   </POU>
